@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | John Doe</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar Section -->
+    <nav id="navbar">
+        <div class="container">
+            <!-- Logo linking to home section -->
+            <a href="#home" class="logo">TP</a>
+            <!-- Main navigation links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Dark/Light mode toggle switch -->
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+            <!-- Mobile hamburger menu (only visible on small screens) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section - First visible section of the portfolio -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Tej Praval</span></h1>
+                <h2>Full Stack Developer</h2>
+                <p>I build exceptional digital experiences that make people's lives easier.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder developer image -->
+                <img class="img" src="https://cdn-icons-png.freepik.com/512/12894/12894580.png" alt="Developer Portrait">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container con">
+            <h2 class="section-title" id="ab-head">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer with 5 years of experience creating web applications. I specialize in JavaScript frameworks and have a keen eye for clean, efficient code.</p>
+                    <p>When I'm not coding, you can find me hiking, reading tech blogs, or contributing to open source projects.</p>
+                    <div class="social-links">
+                        <!-- Social media links -->
+                        <a href="https://github.com/Tejpraval" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tej-praval-pula/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder about me image -->
+                    <img class="img-about" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Picture.png" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Showcasing technical abilities -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <!-- Grid layout for skill cards -->
+            <div class="skills-grid">
+                <!-- Individual skill cards with icons -->
+                <div class="skill-card">
+                    <i class="fab fa-html5 col"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and accessibility best practices</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design and modern layout techniques</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+ features and functional programming</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Component-based architecture and state management</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node"></i>
+                    <h3>Node.js</h3>
+                    <p>Building scalable backend services</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database design and optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Highlighting work samples -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" id="ab-head">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <i class="fas fa-gamepad icon" style="color: #3498db;  font-size: 2rem; padding-top:10px;"></i>
+                    <div class="project-info">
+                        <h3>Interactive Flag Quiz App </h3>
+                        <p>Test your global knowledge with this interactive flag quiz challenge - identify country flags across three difficulty levels!</p>
+                        <div class="project-links">
+                            <a href="https://tejflagquiz.ccbp.tech" class="btn-small" >Live Demo</a>
+                            <a href="https://github.com/Tejpraval/Falgquiz/tree/main/flagquiz" class="btn-small" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-globe" style="color: #3498db;  font-size: 2rem; padding-top:10px;"></i>
+                    <div class="project-info">
+                        <h3>Todo List</h3>
+                        <p>Stay organized with our sleek todo list website—add, save, check off tasks with smooth strike animations, and delete clutter effortlessly!" 🚀✔️🗑️</p>
+                        <div class="project-links">
+                            <a href="https://tejtodolistjs.ccbp.tech/" class="btn-small">Live Demo</a>
+                            <a href="https://github.com/Tejpraval/todolist/tree/main/todo" class="btn-small" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-chart-line" style="color: #3498db;  font-size: 2rem; padding-top:10px;"></i>
+                    <div class="project-info">
+                        <h3>Resume Builder</h3>
+                        <p>Create professional resumes effortlessly with our Resume Builder – featuring multiple templates, profile picture uploads, and one-click PDF downloads.</p>
+                        <div class="project-links">
+                            <a href="https://resumebuildrtej.ccbp.tech/" class="btn-small">Live Demo</a>
+                            <a href="https://github.com/Tejpraval/resume_builder/tree/main/resumebuilder" class="btn-small" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - For getting in touch -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i>tejpraval32@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>9676767993</p>
+                    <p><i class="fas fa-map-marker-alt"></i>LPU Punjab</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tej Praval. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
